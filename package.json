@@ -1,0 +1,40 @@
+{
+    "name": "@avidian/form-data",
+    "version": "1.0.0",
+    "private": false,
+    "description": "FormData with extra powers.",
+    "types": "types/index.d.ts",
+    "main": "dist/index.js",
+    "source": "src/index.ts",
+    "files": [
+        "src",
+        "dist",
+        "types.d.ts"
+    ],
+    "scripts": {
+        "clean": "rm -rf dist && rm -rf types",
+        "test": "jest --testEnvironment=jsdom --coverage",
+        "type-check": "tsc --noEmit",
+        "type-check:watch": "npm run type-check -- --watch",
+        "build": "npm run clean && npm run build:types && npm run build:js",
+        "build:types": "tsc --emitDeclarationOnly",
+        "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/avidianity/form-data"
+    },
+    "author": "John Michael Manlupig",
+    "license": "MIT",
+    "homepage": "https://github.com/avidianity/form-data",
+    "devDependencies": {
+        "@babel/cli": "^7.14.5",
+        "@babel/core": "^7.14.6",
+        "@babel/plugin-proposal-class-properties": "^7.14.5",
+        "@babel/preset-env": "^7.14.7",
+        "@babel/preset-typescript": "^7.14.5",
+        "@types/jest": "^27.0.2",
+        "jest": "^27.2.5",
+        "typescript": "^4.3.5"
+    }
+}
