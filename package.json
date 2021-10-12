@@ -1,6 +1,6 @@
 {
     "name": "@avidian/form-data",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "private": false,
     "description": "FormData with extra powers.",
     "types": "types/index.d.ts",
