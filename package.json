@@ -1,15 +1,15 @@
 {
     "name": "@avidian/form-data",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "private": false,
     "description": "FormData with extra powers.",
     "types": "types/index.d.ts",
     "main": "dist/index.js",
     "source": "src/index.ts",
     "files": [
-        "src",
-        "dist",
-        "types.d.ts"
+        "src/*",
+        "dist/*",
+        "types/*"
     ],
     "scripts": {
         "clean": "rm -rf dist && rm -rf types",
